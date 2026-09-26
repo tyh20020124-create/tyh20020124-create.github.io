@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Capacitive Super-Resolution — ongoing sensing research by Yuheng Tao.">
+  <title>Capacitive Super-Resolution — Yuheng Tao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="capacitive.css?v=1">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">YUHENG TAO</a>
+    <nav aria-label="Project navigation">
+      <a href="index.html#work">Work</a>
+      <a href="#overview">Overview</a>
+      <a class="button-link" href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">01 · SENSING · ONGOING RESEARCH</p>
+        <h1>Capacitive<br>Super-Resolution</h1>
+        <p class="hero-deck">Finding more spatial information in fewer sensing channels.</p>
+        <p class="hero-intro">Capacitive Super-Resolution is an ongoing research project exploring whether a touch surface can recognise distinct locations without being divided into a dense grid of sensing elements. Instead of assigning one sensor to every point, the project investigates how a small number of overlapping channels can create different response relationships across a continuous surface.</p>
+        <p class="hero-intro">The work brings together electrode design, physical prototyping, controlled measurement, and machine learning. Its central question is not simply whether a model can predict a position, but how the physical design of a surface can make spatial information easier to sense in the first place.</p>
+      </div>
+      <div class="media-placeholder media-placeholder--hero" role="img" aria-label="Placeholder for a confidential project overview image">
+        <span>PROJECT OVERVIEW · SANITISED IMAGE</span>
+      </div>
+      <p class="disclosure">Selected visuals and technical details have been simplified or obscured because this research is ongoing and unpublished.</p>
+    </section>
+
+    <section class="story-section story-section--split">
+      <div class="story-copy">
+        <p class="section-number">01</p>
+        <h2>Designing<br>the signal</h2>
+        <p class="subhead">The geometry of the surface becomes part of how location is described.</p>
+        <p>A touch affects every sensing channel differently depending on where it occurs. I used this relationship as a starting point for the electrode design, developing patterns intended to create recognisable combinations of responses across the surface.</p>
+        <p>The process moved repeatedly between drawing, simulation, fabrication, and testing. Some patterns produced strong signals but made distant locations difficult to distinguish. Others were visually continuous but impractical to manufacture. Each iteration helped clarify how geometry, physical construction, and spatial ambiguity influence one another.</p>
+        <p class="note">The complete production geometry is intentionally withheld while the research remains in development.</p>
+      </div>
+      <div class="media-stack">
+        <div class="media-placeholder media-placeholder--square"><span>ABSTRACTED ELECTRODE PATTERN</span></div>
+        <div class="media-row">
+          <div class="media-placeholder"><span>EARLY PATTERN STUDY</span></div>
+          <div class="media-placeholder"><span>AMBIGUITY STUDY</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section story-section--image-first">
+      <div class="media-placeholder media-placeholder--wide"><span>CONTROLLED MEASUREMENT SYSTEM · SENSITIVE REGIONS MASKED</span></div>
+      <div class="story-copy story-copy--narrow">
+        <p class="section-number">02</p>
+        <h2>Building a repeatable experiment</h2>
+        <p class="subhead">Controlled contact made it possible to separate spatial behaviour from the variability of a hand.</p>
+        <p>Early tests showed that manual touch introduced too many changing conditions at once. Position, contact area, pressure, angle, and timing could all affect the signal, making it difficult to understand whether a difference came from the electrode design or from the way the surface had been touched.</p>
+        <p>To create a more dependable baseline, I built an automated measurement workflow that moved a probe across the sensing area and repeated contact under controlled conditions. At each location, the system established a baseline, recorded the response during contact, and returned to a neutral state before continuing. This made it possible to compare positions and design iterations through a consistent process.</p>
+      </div>
+      <div class="process-line" aria-label="Measurement process">
+        <span>Position</span><i></i><span>Baseline</span><i></i><span>Contact</span><i></i><span>Record</span><i></i><span>Repeat</span>
+      </div>
+    </section>
+
+    <section class="story-section story-section--reading">
+      <div class="story-copy story-copy--reading">
+        <p class="section-number">03</p>
+        <h2>Reading a touch<br>as a relationship</h2>
+        <p class="subhead">Location emerges from how the channels change together, rather than from one isolated value.</p>
+      </div>
+      <div class="pipeline" aria-label="Conceptual signal-processing diagram">
+        <div class="pipeline-card"><span class="trace trace--a"></span><span class="trace trace--b"></span><span class="trace trace--c"></span><strong>Channel response</strong></div>
+        <b>→</b>
+        <div class="pipeline-card pipeline-card--signature"><em></em><em></em><em></em><strong>Spatial signature</strong></div>
+        <b>→</b>
+        <div class="pipeline-card pipeline-card--position"><span></span><strong>Estimated area</strong></div>
+      </div>
+      <div class="reading-grid">
+        <div class="reading-copy"><p>Each contact produces a short response across the sensing channels. I examined how those signals changed together, how stable they became during contact, and how their relative contributions varied across the surface. The responses were then converted into a compact spatial signature that could be compared with patterns recorded elsewhere.</p><p>This approach revealed organised differences across the sensing area. Locations within a calibrated region produced recognisable response relationships across repeated trials, suggesting that a low-channel surface can contain more spatial information than its channel count alone might imply.</p></div>
+        <div class="media-row media-row--maps"><div class="media-placeholder"><span>SANITISED RESPONSE MAP</span></div><div class="media-placeholder"><span>REPEATED TRIAL</span></div></div>
+      </div>
+    </section>
+
+    <section class="story-section story-section--result">
+      <div class="result-heading">
+        <p class="section-number">04</p>
+        <h2>What the prototype shows</h2>
+        <p class="subhead">Repeatable recognition inside a calibrated space is promising—but it is not yet the same as continuous localisation.</p>
+      </div>
+      <div class="comparison">
+        <div class="comparison-panel"><span class="comparison-label">WITHIN CALIBRATION</span><div class="dot-field dot-field--ordered"></div><h3>Recognisable patterns</h3><p>The current prototype can distinguish a set of calibrated locations consistently across controlled trials. This supports the premise that carefully designed geometry can allow a small number of channels to carry meaningful spatial information.</p></div>
+        <div class="comparison-panel comparison-panel--muted"><span class="comparison-label">BEYOND CALIBRATION</span><div class="dot-field dot-field--uncertain"></div><h3>A harder spatial question</h3><p>When unfamiliar regions are withheld from the learning process, the task becomes significantly harder. This redirected the work from improving a single performance figure toward improving the continuity and uniqueness of the surface itself.</p></div>
+      </div>
+      <p class="result-note">Detailed results, model settings, and error maps are withheld while the research and validation process continue.</p>
+    </section>
+
+    <section class="story-section story-section--closing">
+      <p class="section-number">05</p>
+      <h2>Current<br>direction</h2>
+      <p class="subhead">The next iteration connects geometry, calibration, and real-world contact more closely.</p>
+      <div class="closing-copy"><p>The work so far has established a repeatable experimental foundation and identified the limits that matter most: areas with similar response patterns, changes in the sensing baseline, variations in physical contact, and the distribution of calibration data.</p><p>The next stage focuses on making neighbouring locations vary more predictably, reducing ambiguous regions, and moving from controlled contact toward realistic interaction. The goal is not only to recognise more points, but to understand what a low-channel sensing surface must become in order to behave reliably outside the laboratory setup.</p></div>
+      <p class="role">Role: Research, electrode design, physical prototyping, experimental design, data analysis, and visual communication.</p>
+      <p class="closing-line">Geometry shapes the signal. Measurement reveals its limits. Iteration turns both into a sensing system.</p>
+    </section>
+
+    <a class="next-project" href="index.html#breatho"><span>Next project</span><strong>Breatho</strong><b>→</b></a>
+  </main>
+
+  <footer><span>Yuheng Tao · 2026</span><span>Ongoing and unpublished research</span><a href="#overview">Back to top ↑</a></footer>
+</body>
+</html>
