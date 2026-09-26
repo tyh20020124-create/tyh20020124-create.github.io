@@ -1,2 +1,5 @@
-# tyh20020124-create.github.io
-Portfolio of Yuheng Tao — industrial design, HCI, robotics, and research projects.
+# Yuheng Tao — Portfolio
+
+English portfolio website for industrial design, human–computer interaction, robotics, and sensing research.
+
+The current version contains the main portfolio page and visual placeholders. Individual project pages will be added after content selection.
