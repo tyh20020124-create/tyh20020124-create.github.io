@@ -33,8 +33,8 @@ footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 5vw;back
 @media(max-width:650px){.project{grid-template-columns:1fr;gap:1rem;padding:1.5rem 0 1.5rem 1.25rem}.project .project-copy{grid-column:1;grid-row:1;padding-right:1.25rem}.project .visual-grid{grid-column:1;grid-row:2;width:100%;min-height:0;transform:none}.project .project-copy{grid-template-columns:2.5rem 1fr}.project h2{font-size:clamp(2rem,11vw,3.5rem)}}
 /* Portfolio-wide typography: modern sans-serif headings. */
 h1,h2,.category-title,.lead{font-family:var(--sans);font-weight:600}
-h1,h2{letter-spacing:-.018em}
-.category-title{font-weight:600;letter-spacing:-.008em;line-height:1.08}
+h1,h2{letter-spacing:.006em}
+.category-title{font-weight:600;letter-spacing:.012em;line-height:1.08}
 .lead{font-weight:600;letter-spacing:0;line-height:1.35}
-.project h2{font-family:var(--sans);font-weight:600;letter-spacing:-.018em}
+.project h2{font-family:var(--sans);font-weight:600;letter-spacing:.006em}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}

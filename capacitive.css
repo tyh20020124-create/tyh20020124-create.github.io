@@ -15,8 +15,8 @@ main{overflow:hidden}.eyebrow,.section-number{color:var(--accent);font-size:.72r
 @media(max-width:560px){.hero-copy h1{font-size:15vw}.story-section h2{font-size:14vw}.media-row{grid-template-columns:1fr}.process-line{justify-content:flex-start}.process-line i{min-width:28px}.pipeline-card{height:180px}.next-project{padding:3rem 1.25rem}.next-project strong{font-size:17vw}.next-project b{font-size:2.5rem}footer{flex-direction:column}}
 /* Project typography: clean, contemporary sans-serif headings. */
 .hero-copy h1,.story-section h2,.hero-deck,.subhead,.comparison-panel h3,.closing-line,.next-project strong{font-family:var(--sans);font-weight:600}
-.hero-copy h1,.story-section h2,.next-project strong{letter-spacing:-.018em}
-.hero-deck,.subhead{letter-spacing:0;line-height:1.25}
-.comparison-panel h3{letter-spacing:-.01em;line-height:1.16}
-.closing-line{letter-spacing:-.012em;line-height:1.12}
+.hero-copy h1,.story-section h2,.next-project strong{letter-spacing:.006em}
+.hero-deck,.subhead{letter-spacing:.012em;line-height:1.25}
+.comparison-panel h3{letter-spacing:.01em;line-height:1.16}
+.closing-line{letter-spacing:.006em;line-height:1.12}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
