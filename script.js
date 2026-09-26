@@ -1,3 +1,9 @@
+const main = document.querySelector("main");
+const about = document.querySelector("#about");
+["capacitive", "breatho", "cartx", "hydroren", "beacon"].forEach((id) => {
+  main.insertBefore(document.querySelector(`#${id}`), about);
+});
+
 const sections = [...document.querySelectorAll("[data-section]")];
 const dots = [...document.querySelectorAll(".section-dots a")];
 const observer = new IntersectionObserver((entries) => {
