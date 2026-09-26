@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Breatho — an embodied respiratory guidance wearable for runners by Yuheng Tao.">
+  <title>Breatho — Yuheng Tao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="capacitive.css?v=2">
+  <link rel="stylesheet" href="breatho.css?v=1">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">YUHENG TAO</a>
+    <nav aria-label="Project navigation">
+      <a href="index.html#work">Work</a>
+      <a href="#overview">Overview</a>
+      <a class="button-link" href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero breatho-hero" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">02 · EMBODIED & WEARABLE · DIS COMPANION ’26</p>
+        <h1>Breatho</h1>
+        <p class="hero-deck">Turning running cadence into a breathing rhythm that can be felt.</p>
+        <p class="hero-intro">Breatho is a soft wearable respiratory guidance system for amateur runners. It senses the rhythm of a runner’s steps and translates it into gentle cycles of pressure around the abdomen, using inflation and release to suggest when to inhale and exhale.</p>
+        <p class="hero-intro">Rather than adding another number, sound, or screen to a run, Breatho makes breathing guidance physical. The project explores how an internal rhythm can become perceptible through the body—and how a wearable might help runners learn that rhythm while remaining present in movement.</p>
+      </div>
+      <figure class="hero-image"><img src="assets/breatho/prototype-hero.webp" alt="Breatho respiratory guidance belt with pneumatic chambers and controller"><figcaption>Final research prototype</figcaption></figure>
+      <p class="project-credit">Research · Wearable Design · Pneumatic Prototyping · Interaction Design · User Testing</p>
+    </section>
+
+    <section class="story-section breath-question">
+      <div class="question-heading"><p class="section-number">01</p><h2>Breathing is difficult to train while moving</h2></div>
+      <div class="question-copy"><p class="subhead">Most running data is visible. Breathing remains inside the body.</p><p>Running technologies make pace, distance, and heart rate easy to see, but breathing remains largely internal. Novice runners may understand that rhythm matters without being able to maintain it once pace, fatigue, and the surrounding environment begin to change.</p><p>Breatho began with a simple question: could breathing guidance be felt instead of watched? The abdomen offered a direct place to explore that idea because pneumatic expansion resembles the physical movement of diaphragmatic breathing.</p></div>
+      <img class="overview-strip" src="assets/breatho/interaction-overview.webp" alt="Breatho concept overview showing the belt, pneumatic system, and wearing context">
+    </section>
+
+    <section class="story-section rhythm-section">
+      <div class="story-copy story-copy--reading"><p class="section-number">02</p><h2>Steps become pressure.<br>Pressure becomes timing.</h2><p class="subhead">The system turns an external locomotor rhythm into a bodily cue for an internal physiological rhythm.</p></div>
+      <div class="breath-loop" aria-label="Breatho interaction loop"><div><span class="loop-icon steps-icon"></span><strong>Step cadence</strong></div><b>→</b><div><span class="loop-icon rhythm-icon"></span><strong>Rhythm mapping</strong></div><b>→</b><div><span class="loop-icon pressure-icon"></span><strong>Abdominal pressure</strong></div><b>→</b><div><span class="loop-icon breath-icon"></span><strong>Guided breathing</strong></div></div>
+      <div class="rhythm-copy"><p>During a run, the system detects cadence and maps it to a selected step-to-breath rhythm. Small air chambers gradually inflate to cue inhalation, then release to mark exhalation. The runner does not need to count steps or interpret an abstract signal; the timing is carried by a sensation that already resembles breathing.</p><p>This creates a closed interaction loop between locomotion and respiration: movement shapes the cue, the cue guides breathing, and the runner can adjust through bodily awareness rather than continuous visual attention.</p></div>
+    </section>
+
+    <section class="story-section form-section">
+      <div class="form-heading"><p class="section-number">03</p><h2>Designing where the body should feel the cue</h2><p class="subhead">The position and distribution of pressure shaped whether the rhythm felt intuitive or intrusive.</p></div>
+      <div class="form-grid"><figure class="form-concept"><img src="assets/breatho/wearable-concept.webp" alt="Illustration of the Breatho belt, air chambers, and body placement"><figcaption>Wearable concept and placement</figcaption></figure><figure><img src="assets/breatho/airbag-closeup.webp" alt="Close-up of an air chamber positioned against the abdomen"><figcaption>Early chamber placement</figcaption></figure><figure><img src="assets/breatho/airbag-fitting.webp" alt="Participant fitting study for the pneumatic belt"><figcaption>Fit and perceptibility testing</figcaption></figure></div>
+      <div class="form-copy"><p>The physical form was developed through repeated studies of air-chamber size, number, and placement. A large central chamber produced a broad sensation but could feel intrusive during movement. Smaller chambers placed laterally created a clearer, more balanced cue while integrating more naturally into a running belt.</p><p>These iterations shifted the project from a functional pneumatic prototype toward a wearable interaction. The placement of the cue, the way pressure spread across the abdomen, and the distribution of hardware all influenced whether the rhythm felt understandable or distracting.</p></div>
+    </section>
+
+    <section class="story-section testing-section">
+      <div class="testing-heading"><p class="section-number">04</p><h2>Testing the rhythm in motion</h2><p class="subhead">The interaction had to remain understandable while the body, pace, and environment were changing.</p></div>
+      <figure class="testing-photo"><img src="assets/breatho/treadmill-test.webp" alt="Participant wearing Breatho during treadmill testing"><figcaption>Treadmill evaluation</figcaption></figure>
+      <div class="testing-copy"><p>Breatho was evaluated through iterative fitting sessions, treadmill runs, and outdoor running trials. Participants were generally able to understand the press-and-release rhythm quickly and follow it without interrupting their stride. The studies also showed more regular respiratory patterns when the guidance was active.</p><p>In the treadmill study, reported perceived exertion decreased from 13.46 to 11.39 on the Borg scale when participants ran with Breatho. This is preliminary evidence from a small study rather than a claim of long-term performance improvement, but it suggests that embodied guidance can make respiratory rhythm easier to maintain during movement.</p><p>The trials also exposed the current prototype’s practical limits. Participants valued the clarity of the cue but identified weight, pump noise, rigidity, and long-term comfort as priorities for further development.</p></div>
+      <div class="waveforms"><figure><img src="assets/breatho/breathing-without.webp" alt="Irregular respiratory trace recorded without Breatho"><figcaption>Without guidance</figcaption></figure><figure><img src="assets/breatho/breathing-with.webp" alt="More periodic respiratory trace recorded with Breatho"><figcaption>With Breatho</figcaption></figure></div>
+      <div class="result-callout"><strong>13.46 → 11.39</strong><span>reported perceived exertion<br>in the preliminary treadmill study</span></div>
+    </section>
+
+    <section class="story-section story-section--closing breatho-closing">
+      <div class="closing-product"><img src="assets/breatho/prototype-dark.webp" alt="Breatho prototype shown on a dark background"></div>
+      <p class="section-number">05</p><h2>From instruction<br>to embodied skill</h2><p class="subhead">The best guidance may be the guidance the body gradually learns not to need.</p>
+      <div class="closing-copy"><p>Breatho reframes breathing as more than a hidden physiological measurement. By linking step cadence with body-centred pneumatic feedback, the project makes respiration a tangible and trainable part of the running experience.</p><p>The next iteration will focus on a lighter and quieter wearable, more adaptive timing, and guidance that gradually recedes as the runner internalises the rhythm. The longer-term aim is not to command every breath, but to help the body learn a pattern that can eventually continue without constant assistance.</p></div>
+      <p class="role">Role: research framing, wearable design, pneumatic prototyping, interaction design, system development, user testing, and visual communication.</p>
+      <p class="publication">Published in the DIS Companion ’26 proceedings.</p>
+    </section>
+
+    <a class="next-project" href="index.html#cartx"><span>Next project</span><strong>CartX</strong><b>→</b></a>
+  </main>
+  <footer><span>Yuheng Tao · 2026</span><span>Breatho · DIS Companion ’26</span><a href="#overview">Back to top ↑</a></footer>
+</body>
+</html>
