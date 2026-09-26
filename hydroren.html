@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hydroren — a robotic pool-cleaning system by Yuheng Tao.">
+  <title>Hydroren — Yuheng Tao</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="capacitive.css?v=2">
+  <link rel="stylesheet" href="hydroren.css?v=1">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="index.html">YUHENG TAO</a>
+    <nav aria-label="Project navigation">
+      <a href="index.html#work">Work</a>
+      <a href="#overview">Overview</a>
+      <a class="button-link" href="index.html#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero hydroren-hero" id="overview">
+      <div class="hero-copy">
+        <p class="eyebrow">04 · ROBOTICS & SUSTAINABLE PRODUCT SYSTEMS</p>
+        <h1>Hydroren</h1>
+        <p class="hero-deck">A robotic pool cleaner that uses one flow of water to clean, move, and communicate.</p>
+        <p class="hero-intro">Hydroren is a robotic cleaning concept designed around the daily rhythm of a commercial swimming pool. It works after closing, when the pool is empty, and returns to a wall-mounted charging base before swimmers arrive.</p>
+        <p class="hero-intro">The project explores how the water flow created for suction could perform more than one job. The same hydraulic system supports debris collection, brushing, and directional movement, while a hydrocyclone separates particles before they reach a fine filter.</p>
+      </div>
+      <figure class="hero-image"><img src="assets/hydroren/web/hero-underwater.webp" alt="Hydroren robotic pool cleaner operating underwater"><figcaption>Hydroren in its overnight cleaning context</figcaption></figure>
+      <p class="project-credit">Research · System Design · Industrial Design · Hydraulic Prototyping · Interaction Design</p>
+    </section>
+
+    <section class="story-section hidden-work" id="context">
+      <div class="section-heading"><p class="section-number">01</p><h2>Pool cleaning happens out of sight</h2></div>
+      <div class="section-copy"><p class="subhead">A maintained pool can still feel uncertain when the work behind it remains invisible.</p><p>Commercial pools depend on routines that take place before opening and after closing. Staff deploy cleaning equipment, remove collected debris, rinse filters, and prepare the water for the next day. Swimmers encounter the result, but rarely see the process or receive a clear record of what has been done.</p><p>Many robotic cleaners also treat suction, movement, brushing, and filtration as separate demands. Hydroren began by asking whether these functions could share a physical process and whether the result of that process could become part of the public experience of the pool.</p></div>
+      <figure class="full-visual"><img src="assets/hydroren/web/wall-display.webp" alt="Hydroren docked on a wall beside a swimming pool"><figcaption>Docked during opening hours</figcaption></figure>
+    </section>
+
+    <section class="story-section flow-section" id="system">
+      <div class="flow-heading"><p class="section-number">02</p><h2>One water flow,<br>several jobs</h2><p class="subhead">The system reuses the energy already moving water through the machine.</p></div>
+      <figure class="transparent-robot"><img src="assets/hydroren/web/transparent-system.webp" alt="Transparent rendering showing the internal components of Hydroren"><figcaption>Internal system layout</figcaption></figure>
+      <div class="flow-copy"><p>A central motor drives an impeller to draw water and debris into the robot. Instead of treating the outgoing flow as waste, internal channels redirect it toward secondary functions. Part of the flow rotates the cleaning brushes, while directional nozzles use the remaining jet to support movement and steering.</p><p>This hydraulic architecture shaped both the internal layout and the outer form. The motor, particle chamber, flow paths, brushes, and nozzles had to operate as one continuous system rather than as isolated features.</p></div>
+      <div class="system-line" aria-label="Hydroren hydraulic process"><span>Motor & impeller</span><i></i><span>Suction & collection</span><i></i><span>Redirected flow</span><i></i><span>Brushes & movement</span></div>
+      <div class="sketch-pair"><figure><img src="assets/hydroren/web/flow-section-sketch.webp" alt="Section sketch of the water channels inside Hydroren"><figcaption>Flow path through the body</figcaption></figure><figure><img src="assets/hydroren/web/hydraulic-layout-sketch.webp" alt="Sketch of impellers and hydraulic routing"><figcaption>Impeller and outlet study</figcaption></figure></div>
+    </section>
+
+    <section class="story-section separator-section" id="separation">
+      <div class="separator-heading"><p class="section-number">03</p><h2>Separating debris<br>before the filter</h2><p class="subhead">A hydrocyclone offers a way to reduce repeated filter handling.</p></div>
+      <div class="separator-copy"><p>Inside Hydroren, water enters the separator tangentially and forms a vortex. Denser particles move outward and settle into the collection chamber, while cleaner water returns to the circulation path. The aim is to capture common pool debris before it reaches a dense filter and reduce the amount of material staff need to rinse away after each cycle.</p><p>The mechanism was explored through flow simulation and a transparent water-tank rig. These tests examined whether the vortex could establish a stable separation pattern and move visible particles into a dedicated chamber. They informed the direction of the design, but they do not represent the performance of a fully integrated production machine.</p></div>
+      <div class="test-grid"><figure><img src="assets/hydroren/web/separator-test-rig.webp" alt="Transparent water-tank rig for testing particle separation"><figcaption>Transparent hydraulic test rig</figcaption></figure><figure><img src="assets/hydroren/web/separation-test.webp" alt="Particles moving through the separation test tank"><figcaption>Visible particle-separation test</figcaption></figure></div>
+    </section>
+
+    <section class="story-section form-section" id="form">
+      <div class="form-heading"><p class="section-number">04</p><h2>Form follows coverage,<br>flow, and handling</h2><p class="subhead">A low triangular body grew around the hydraulic layout and the geometry of the pool floor.</p></div>
+      <div class="form-copy"><p>Early studies moved from conventional rectangular cleaners toward a three-point form. The broad, low body keeps the main volume close to the pool surface, while extended cleaning points approach walls and corners. A central volume houses the separator and display, with channels radiating toward the brushes and directional outlets.</p><p>Sketch models tested how the shell could protect the mechanism without appearing heavy or aggressive. The final form uses soft continuous surfaces to integrate the central chamber, removable cover, intake regions, and edge-cleaning elements into one recognisable object.</p></div>
+      <div class="form-images"><figure class="form-sketch"><img src="assets/hydroren/web/form-sketches.webp" alt="Sketches showing the development of Hydroren's triangular body"><figcaption>Proportion, coverage, and mechanism studies</figcaption></figure><figure class="dark-render"><img src="assets/hydroren/web/final-render.webp" alt="Final Hydroren product rendering on a dark background"><figcaption>Resolved product form</figcaption></figure></div>
+    </section>
+
+    <section class="story-section service-section" id="service">
+      <div class="service-heading"><p class="section-number">05</p><h2>Working at night,<br>communicating by day</h2><p class="subhead">The charging dock connects the machine’s cleaning role with its public-facing role.</p></div>
+      <div class="service-copy"><p>After the pool closes, a manager places Hydroren in the water. The robot follows a cleaning path, collects debris, and records the cycle while the pool is empty. In the morning, staff lift it out, open the cover, remove the collection chamber, and place the machine on its wall-mounted charging base.</p><p>Docking changes the meaning of the product. During cleaning, the circular display provides operational feedback such as progress and remaining charge. During opening hours, the same display presents a quieter summary of recent cleaning activity. Staff can check the machine at a glance, while swimmers receive a visible indication that maintenance has taken place.</p></div>
+      <div class="journey-grid"><figure><img src="assets/hydroren/web/night-journey.webp" alt="Manager journey showing Hydroren cleaning a pool overnight"><figcaption>Night: deploy, clean, and navigate</figcaption></figure><figure><img src="assets/hydroren/web/day-journey.webp" alt="Morning journey showing debris removal, charging, and public display"><figcaption>Day: maintain, dock, and display</figcaption></figure></div>
+      <div class="ui-grid"><figure><img src="assets/hydroren/web/ui-work-progress.webp" alt="Circular interface showing cleaning progress"><figcaption>Work progress</figcaption></figure><figure><img src="assets/hydroren/web/ui-charging.webp" alt="Circular interface showing charging progress"><figcaption>Charging</figcaption></figure><figure><img src="assets/hydroren/web/ui-cleaning-record.webp" alt="Circular interface showing a cleaning record"><figcaption>Public cleaning record</figcaption></figure></div>
+    </section>
+
+    <section class="story-section prototype-section" id="prototype">
+      <div class="prototype-heading"><p class="section-number">06</p><h2>Testing form and mechanism<br>at different scales</h2><p class="subhead">Physical prototypes connected the visual concept with its internal system.</p></div>
+      <div class="prototype-copy"><p>The project moved between CAD development, appearance models, mechanical studies, and hydraulic testing. A larger appearance prototype examined the product’s stance, surface transitions, lighting, and circular display. A smaller model explored how the robot could be stored and presented on its charging base.</p><p>Separate hydraulic tests focused on the most uncertain part of the proposal: particle separation. Together, these prototypes helped distinguish what could be demonstrated physically from what remained a system-level design direction.</p><p>Hydroren is not presented as a finished commercial cleaner. It is a design investigation into how robotic maintenance can use resources more deliberately and communicate its work more clearly.</p></div>
+      <div class="prototype-grid"><figure class="prototype-main"><img src="assets/hydroren/web/appearance-prototype.webp" alt="Large Hydroren appearance prototype with illuminated display"><figcaption>Appearance prototype</figcaption></figure><figure><img src="assets/hydroren/web/dock-model.webp" alt="Smaller Hydroren model placed on its charging dock"><figcaption>Dock and access study</figcaption></figure><figure><img src="assets/hydroren/web/exploded-view.webp" alt="Exploded technical drawing of Hydroren"><figcaption>Component arrangement</figcaption></figure></div>
+    </section>
+
+    <section class="story-section story-section--closing hydroren-closing" id="closing">
+      <div class="closing-image"><img src="assets/hydroren/web/wall-display.webp" alt="Hydroren displayed on its wall-mounted charging base"></div>
+      <p class="section-number">07</p><h2>Maintenance becomes<br>part of the experience</h2><p class="subhead">A pool-cleaning robot can do more than disappear after the work is complete.</p>
+      <div class="closing-copy"><p>Hydroren connects underwater cleaning, daily staff routines, and public information in one product-service cycle. Its hydraulic architecture explores how a single flow of water can support several functions. Its dock and display extend the value of that work beyond the cleaning cycle by making maintenance visible when people return.</p><p>The project reframes sustainability as both a technical and communicative question: how a machine uses energy and water, and how clearly people can understand the work it performs.</p></div>
+      <p class="role">Role: research framing, system concept, industrial design, hydraulic prototyping, interaction design, CAD development, model making, and visual communication.</p>
+    </section>
+
+    <a class="next-project" href="index.html#beacon"><span>Next project</span><strong>Beacon</strong><b>→</b></a>
+  </main>
+  <footer><span>Yuheng Tao · 2026</span><span>Hydroren · Final Year Project</span><a href="#overview">Back to top ↑</a></footer>
+</body>
+</html>

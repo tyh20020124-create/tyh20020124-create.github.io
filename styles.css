@@ -20,10 +20,12 @@
 .project .project-meta,.project .project-columns,.project .project-link{display:none}
 #capacitive .project-link{display:inline-block;grid-column:2;justify-self:start;margin-top:1.35rem;padding-bottom:.18rem;border-bottom:1px solid var(--accent);font-size:.78rem;font-weight:600;letter-spacing:.05em}
 #breatho .project-link{display:inline-block;grid-column:2;justify-self:start;margin-top:1.35rem;padding-bottom:.18rem;border-bottom:1px solid var(--accent);font-size:.78rem;font-weight:600;letter-spacing:.05em}
+#hydroren .project-link{display:inline-block;grid-column:2;justify-self:start;margin-top:1.35rem;padding-bottom:.18rem;border-bottom:1px solid var(--accent);font-size:.78rem;font-weight:600;letter-spacing:.05em}
 .project .visual-grid{grid-column:2;grid-row:1;display:block;justify-self:stretch;width:100%;height:auto;min-width:0;min-height:0;aspect-ratio:16/9;transform:none}
 .project .visual-grid .placeholder{display:none}
 .project .visual-grid .placeholder:first-child{display:block;width:100%;height:100%;min-height:0;background-color:#e2e0d8}
 .project .visual-grid .placeholder:first-child span{background:rgba(255,255,255,.9);color:var(--ink)}
+.project-cover img{display:block;width:100%;height:100%;object-fit:cover}.project-cover:after{display:none}
 .section-dots{display:none}
 .section-dots{display:none}.section-dots a{width:9px;height:9px;border:1px solid var(--ink);border-radius:50%;transition:background .2s}.section-dots a.is-active{border-color:var(--accent);background:var(--accent)}
 footer{display:flex;justify-content:space-between;gap:1rem;padding:2rem 5vw;background:var(--ink);color:var(--paper);font-size:.78rem;border-top:1px solid rgba(255,255,255,.18)}
