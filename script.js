@@ -1,5 +1,17 @@
 const main = document.querySelector("main");
 const about = document.querySelector("#about");
+
+if (document.documentElement.classList.contains("first-visit")) {
+  const introName = document.querySelector(".hero h1");
+  const name = introName.textContent;
+  introName.setAttribute("aria-label", name);
+  introName.innerHTML = [...name].map((character, index) =>
+    character === " "
+      ? '<span class="intro-space" aria-hidden="true"> </span>'
+      : `<span class="intro-char" aria-hidden="true" style="--char-index:${index}">${character}</span>`
+  ).join("");
+}
+
 ["capacitive", "breatho", "cartx", "hydroren", "beacon"].forEach((id) => {
   main.insertBefore(document.querySelector(`#${id}`), about);
 });
