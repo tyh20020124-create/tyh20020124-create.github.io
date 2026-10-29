@@ -3,114 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Capacitive Super-Resolution — ongoing sensing research by Yuheng Tao.">
-  <title>Capacitive Super-Resolution — Yuheng Tao</title>
+  <meta name="description" content="Capacitive super-resolution localisation, an ongoing sensing research project by Yuheng Tao.">
+  <title>Capacitive Super-Resolution Localisation | Yuheng Tao</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="capacitive.css?v=2">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Noto+Sans+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="capacitive.css?v=6">
 </head>
 <body>
   <header class="site-header">
     <a class="wordmark" href="index.html">YUHENG TAO</a>
-    <nav aria-label="Project navigation">
-      <a href="index.html#work">Work</a>
-      <a href="#overview">Overview</a>
-      <a class="button-link" href="index.html#about">About</a>
-    </nav>
+    <nav aria-label="Project navigation"><a href="index.html#work">Work</a><a href="#overview">Overview</a><a class="button-link" href="index.html#about">About</a></nav>
   </header>
-
   <main>
     <section class="project-hero" id="overview">
-      <div class="hero-copy">
+      <div class="hero-heading">
         <p class="eyebrow">01 · SENSING · ONGOING RESEARCH</p>
-        <h1>Capacitive<br>Super-Resolution</h1>
-        <p class="hero-deck">Finding more spatial information in fewer sensing channels.</p>
-        <p class="hero-intro">Capacitive Super-Resolution is an ongoing research project exploring whether a touch surface can recognise distinct locations without being divided into a dense grid of sensing elements. Instead of assigning one sensor to every point, the project investigates how a small number of overlapping channels can create different response relationships across a continuous surface.</p>
-        <p class="hero-intro">The work brings together electrode design, physical prototyping, controlled measurement, and machine learning. Its central question is not simply whether a model can predict a position, but how the physical design of a surface can make spatial information easier to sense in the first place.</p>
+        <h1>Capacitive<br>Super-Resolution Localisation</h1>
+        <p class="hero-deck">Finer-grained touch localisation on two-dimensional surfaces with fewer physical sensing channels.</p>
       </div>
-      <div class="media-placeholder media-placeholder--hero" role="img" aria-label="Placeholder for a confidential project overview image">
-        <span>PROJECT OVERVIEW · SANITISED IMAGE</span>
-      </div>
-      <p class="disclosure">Selected visuals and technical details have been simplified or obscured because this research is ongoing and unpublished.</p>
-    </section>
-
-    <section class="story-section story-section--split">
-      <div class="story-copy">
-        <p class="section-number">01</p>
-        <h2>Designing<br>the signal</h2>
-        <p class="subhead">The geometry of the surface becomes part of how location is described.</p>
-        <p>A touch affects every sensing channel differently depending on where it occurs. I used this relationship as a starting point for the electrode design, developing patterns intended to create recognisable combinations of responses across the surface.</p>
-        <p>The process moved repeatedly between drawing, simulation, fabrication, and testing. Some patterns produced strong signals but made distant locations difficult to distinguish. Others were visually continuous but impractical to manufacture. Each iteration helped clarify how geometry, physical construction, and spatial ambiguity influence one another.</p>
-        <p class="note">The complete production geometry is intentionally withheld while the research remains in development.</p>
-      </div>
-      <div class="media-stack">
-        <div class="media-placeholder media-placeholder--square"><span>ABSTRACTED ELECTRODE PATTERN</span></div>
-        <div class="media-row">
-          <div class="media-placeholder"><span>EARLY PATTERN STUDY</span></div>
-          <div class="media-placeholder"><span>AMBIGUITY STUDY</span></div>
-        </div>
+      <figure class="project-media project-media--hero"><img src="assets/capacitive/web/home-hero.png?v=1" alt="A finger pressing a capacitive electrode prototype with sensitive details obscured"><figcaption><strong>Figure 1:</strong> Prototype touch test; electrode details have been obscured.</figcaption></figure>
+      <div class="hero-copy hero-details">
+        <p>High-resolution tactile surfaces often rely on dense arrays of discrete sensing elements. Increasing the number of elements also increases the burden of wiring, packaging, crosstalk management, and readout.<sup><a href="#ref-1">[1]</a><a href="#ref-2">[2]</a></sup></p>
+        <p>Row–column multiplexing reduces the number of connections, but it still requires regular arrays, multilayer electrodes, and peripheral scanning circuits. Other low-wire methods simplify the interface while limiting spatial resolution or making the signals harder to interpret.<sup><a href="#ref-2">[2]</a><a href="#ref-3">[3]</a></sup></p>
+        <p>This project examines whether electrode geometry can encode position directly. It combines computational design, controlled measurement, and machine learning to test whether a rapidly fabricated surface with few channels can distinguish locations more finely than its channel density would suggest. The work draws on tactile super-resolution research and focuses on geometric separability in planar capacitive surfaces.<sup><a href="#ref-1">[1]</a><a href="#ref-4">[4]</a></sup></p>
+        <ul class="keywords" aria-label="Project keywords"><li>Computational design</li><li>Sensing</li><li>Machine learning</li></ul>
       </div>
     </section>
 
-    <section class="story-section story-section--image-first">
-      <div class="media-placeholder media-placeholder--wide"><span>CONTROLLED MEASUREMENT SYSTEM · SENSITIVE REGIONS MASKED</span></div>
-      <div class="story-copy story-copy--narrow">
-        <p class="section-number">02</p>
-        <h2>Building a repeatable experiment</h2>
-        <p class="subhead">Controlled contact made it possible to separate spatial behaviour from the variability of a hand.</p>
-        <p>Early tests showed that manual touch introduced too many changing conditions at once. Position, contact area, pressure, angle, and timing could all affect the signal, making it difficult to understand whether a difference came from the electrode design or from the way the surface had been touched.</p>
-        <p>To create a more dependable baseline, I built an automated measurement workflow that moved a probe across the sensing area and repeated contact under controlled conditions. At each location, the system established a baseline, recorded the response during contact, and returned to a neutral state before continuing. This made it possible to compare positions and design iterations through a consistent process.</p>
-      </div>
-      <div class="process-line" aria-label="Measurement process">
-        <span>Position</span><i></i><span>Baseline</span><i></i><span>Contact</span><i></i><span>Record</span><i></i><span>Repeat</span>
-      </div>
+    <section class="story-section story-section--text-left" id="geometry">
+      <div class="story-copy"><p class="section-number">01</p><h2>Electrode geometry and spatial separability</h2><p class="subhead">Electrode geometry is treated as a design variable that can be computed and tested.</p><p>The electrode patterns are designed to produce a recognisable combination of responses at each sampled location. Maximising signal strength alone is insufficient. With only a few channels, responses must also remain stable and distinguishable across the surface.</p><p>The design process moves between parametric drawing, simulation, fabrication, and measurement. Some variants produce strong signals but similar responses at distant locations. Others perform well numerically but require line widths, spacing, or connections that are unsuitable for rapid fabrication. The final geometry must balance signal-to-noise ratio, spatial separability, continuity, and manufacturability.</p><p>Figure 2 applies 3% signal noise as a conservative test condition and identifies locations where responses may overlap. Clusters near the boundary are diagnostic outputs, not the final electrode shape. They indicate parameter settings that may create indistinguishable regions.</p><p class="note">Because the research is unpublished, this page presents overlap risk without revealing the complete production electrode pattern.</p></div>
+      <figure class="project-media project-media--analysis"><img src="assets/capacitive/web/overlap-risk-map.png" alt="Circular sampling map evaluating positional overlap risk under three percent noise"><figcaption><strong>Figure 2:</strong> Positional overlap risk under 3% noise; coloured points indicate inseparable regions requiring further optimisation.</figcaption></figure>
     </section>
 
-    <section class="story-section story-section--reading">
-      <div class="story-copy story-copy--reading">
-        <p class="section-number">03</p>
-        <h2>Reading a touch<br>as a relationship</h2>
-        <p class="subhead">Location emerges from how the channels change together, rather than from one isolated value.</p>
-      </div>
-      <div class="pipeline" aria-label="Conceptual signal-processing diagram">
-        <div class="pipeline-card"><span class="trace trace--a"></span><span class="trace trace--b"></span><span class="trace trace--c"></span><strong>Channel response</strong></div>
-        <b>→</b>
-        <div class="pipeline-card pipeline-card--signature"><em></em><em></em><em></em><strong>Spatial signature</strong></div>
-        <b>→</b>
-        <div class="pipeline-card pipeline-card--position"><span></span><strong>Estimated area</strong></div>
-      </div>
-      <div class="reading-grid">
-        <div class="reading-copy"><p>Each contact produces a short response across the sensing channels. I examined how those signals changed together, how stable they became during contact, and how their relative contributions varied across the surface. The responses were then converted into a compact spatial signature that could be compared with patterns recorded elsewhere.</p><p>This approach revealed organised differences across the sensing area. Locations within a calibrated region produced recognisable response relationships across repeated trials, suggesting that a low-channel surface can contain more spatial information than its channel count alone might imply.</p></div>
-        <div class="media-row media-row--maps"><div class="media-placeholder"><span>SANITISED RESPONSE MAP</span></div><div class="media-placeholder"><span>REPEATED TRIAL</span></div></div>
-      </div>
+    <section class="story-section story-section--media-left" id="measurement">
+      <figure class="project-media project-media--rig"><img src="assets/capacitive/web/measurement-rig.jpg" alt="Three-axis automated measurement rig for capacitive surface localisation experiments"><figcaption><strong>Figure 3:</strong> The automated rig standardises probe position, contact procedure, and repetition count.</figcaption></figure>
+      <div class="story-copy"><p class="section-number">02</p><h2>Repeatable measurement and dataset construction</h2><p class="subhead">Contact conditions are controlled before geometry and localisation performance are compared.</p><p>Manual touch varies in position, contact area, pressure, angle, and duration. If these factors change together, differences in the recorded response cannot be attributed confidently to the electrode geometry.</p><p>An automated three-axis rig provides a consistent experimental baseline. The probe moves to predefined grid locations and repeats the same sequence at each point: baseline acquisition, controlled contact, signal recording, and reset. This procedure is used across geometry variants and repeated trials.</p><p>The resulting dataset supports more than point-wise accuracy. It also reveals measurement repeatability, separability near the boundary, and the regions that become ambiguous first as noise increases.</p></div>
     </section>
 
-    <section class="story-section story-section--result">
-      <div class="result-heading">
-        <p class="section-number">04</p>
-        <h2>What the prototype shows</h2>
-        <p class="subhead">Repeatable recognition inside a calibrated space is promising—but it is not yet the same as continuous localisation.</p>
-      </div>
-      <div class="comparison">
-        <div class="comparison-panel"><span class="comparison-label">WITHIN CALIBRATION</span><div class="dot-field dot-field--ordered"></div><h3>Recognisable patterns</h3><p>The current prototype can distinguish a set of calibrated locations consistently across controlled trials. This supports the premise that carefully designed geometry can allow a small number of channels to carry meaningful spatial information.</p></div>
-        <div class="comparison-panel comparison-panel--muted"><span class="comparison-label">BEYOND CALIBRATION</span><div class="dot-field dot-field--uncertain"></div><h3>A harder spatial question</h3><p>When unfamiliar regions are withheld from the learning process, the task becomes significantly harder. This redirected the work from improving a single performance figure toward improving the continuity and uniqueness of the surface itself.</p></div>
-      </div>
-      <p class="result-note">Detailed results, model settings, and error maps are withheld while the research and validation process continue.</p>
+    <section class="story-section story-section--text-left" id="results">
+      <div class="story-copy"><p class="section-number">03</p><h2>Calibrated localisation performance and scope</h2><p class="subhead">Discrete calibrated positions can be classified reliably; continuous localisation remains unresolved.</p><p>The current prototype uses a k-nearest neighbours (KNN) classifier to localise touch across 69 calibrated positions sampled at 5 mm intervals. In controlled repeated trials, classification accuracy exceeds 99%, including for samples near the edge of the disc.<sup><a href="#internal-result">[Project result]</a></sup></p><p>These results suggest that designed electrode geometry can support stable classification boundaries with few physical channels. The finding is limited to the calibrated position set. It does not establish continuous coordinate estimation at arbitrary locations. Predictions are less reliable for positions absent from the training data, and similar responses from neighbouring positions still constrain interpolation and generalisation.</p></div>
+      <figure class="project-media project-media--result"><img src="assets/capacitive/web/sampling-grid.png" alt="Five-millimetre sampling grid and usable positions on a 50-millimetre electrode disc"><figcaption><strong>Figure 4:</strong> The 5 mm sampling layout on a 50 mm disc, including usable points, structural clearance regions, and temporarily excluded locations.</figcaption></figure>
+      <div class="metric-row" aria-label="Current experimental results"><div><strong>5 mm</strong><span>Sampling interval</span></div><div><strong>69</strong><span>Calibrated positions</span></div><div><strong>&gt;99%</strong><span>Controlled classification accuracy</span></div></div>
+      <div class="limitations"><h3>Current limitations</h3><ul><li><strong>Calibration dependence.</strong> The reported performance comes from a fixed set of discrete, pre-calibrated positions and cannot yet be extended to arbitrary points on the surface.</li><li><strong>Limited spatial generalisation.</strong> Predictions at unseen locations are less reliable. Continuous coordinate estimation and interpolation therefore remain open problems.</li><li><strong>Ambiguity between neighbours.</strong> Adjacent positions can produce similar capacitance patterns, making the classification boundary more sensitive to noise.</li><li><strong>Transfer to human touch.</strong> The mechanical probe controls contact conditions. Validation with real fingers must account for differences in contact area, pressure, angle, and user behaviour.</li></ul></div>
     </section>
 
-    <section class="story-section story-section--closing">
-      <p class="section-number">05</p>
-      <h2>Current<br>direction</h2>
-      <p class="subhead">The next iteration connects geometry, calibration, and real-world contact more closely.</p>
-      <div class="closing-copy"><p>The work so far has established a repeatable experimental foundation and identified the limits that matter most: areas with similar response patterns, changes in the sensing baseline, variations in physical contact, and the distribution of calibration data.</p><p>The next stage focuses on making neighbouring locations vary more predictably, reducing ambiguous regions, and moving from controlled contact toward realistic interaction. The goal is not only to recognise more points, but to understand what a low-channel sensing surface must become in order to behave reliably outside the laboratory setup.</p></div>
-      <p class="role">Role: Research, electrode design, physical prototyping, experimental design, data analysis, and visual communication.</p>
-      <p class="closing-line">Geometry shapes the signal. Measurement reveals its limits. Iteration turns both into a sensing system.</p>
+    <section class="story-section story-section--closing" id="direction">
+      <p class="section-number">04</p><h2>Future research directions</h2><p class="subhead">The next stage moves beyond discrete calibration towards continuous localisation and less constrained forms of touch.</p>
+      <div class="closing-grid"><article><span>01</span><h3>Reduce spatial ambiguity</h3><p>Optimise the electrode geometry so neighbouring responses change more continuously, with less local overlap and less degradation near the boundary.</p></article><article><span>02</span><h3>Transfer to human touch</h3><p>Test how finger contact area, pressure, posture, and individual differences affect the classification boundaries established with the mechanical probe.</p></article><article><span>03</span><h3>Extend to three-dimensional surfaces</h3><p>Evaluate the method on curved surfaces and three-dimensional objects, including the effects of deformation, curvature, and manufacturing error on spatial encoding.</p></article></div>
+      <p class="role">Role: research design, computational electrode design, physical prototyping, experimental systems, data analysis, and visual communication.</p>
     </section>
 
+    <section class="references" aria-labelledby="references-title"><p class="section-number">REFERENCES</p><h2 id="references-title">Research basis</h2><ol><li id="ref-1"><a href="https://www.nature.com/articles/s41528-024-00325-z" target="_blank" rel="noreferrer">Yan et al. Large-area magnetic skin for multi-point and multi-scale tactile sensing with super-resolution. npj Flexible Electronics, 2024.</a></li><li id="ref-2"><a href="https://www.mdpi.com/1424-8220/24/20/6629" target="_blank" rel="noreferrer">Design of a Capacitive Tactile Sensor Array System for Human–Computer Interaction. Sensors, 2024.</a></li><li id="ref-3"><a href="https://www.nature.com/articles/s41598-022-18265-x" target="_blank" rel="noreferrer">Nesser &amp; Lubineau. Minimizing the wiring in distributed strain sensing using a capacitive sensor sheet with variable-resistance electrodes. Scientific Reports, 2022.</a></li><li id="ref-4"><a href="https://www.nature.com/articles/s41528-026-00563-3" target="_blank" rel="noreferrer">Xu et al. A bio-inspired origami capacitive robotic e-skin with multimodal sensing capabilities. npj Flexible Electronics, 2026.</a></li><li id="internal-result"><span>Internal project record, 2026: KNN, 5 mm sampling interval, 69 calibrated positions, and over 99% accuracy in controlled repeated trials.</span></li></ol></section>
     <a class="next-project" href="index.html#breatho"><span>Next project</span><strong>Breatho</strong><b>→</b></a>
   </main>
-
-  <footer><span>Yuheng Tao · 2026</span><span>Ongoing and unpublished research</span><a href="#overview">Back to top ↑</a></footer>
+  <footer><span>Yuheng Tao · 2026</span><span>Ongoing, unpublished research</span><a href="#overview">Back to top ↑</a></footer>
 </body>
 </html>
